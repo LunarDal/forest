@@ -20,6 +20,10 @@ window.addEventListener('load', ()=>{
         let n4_2 = false;
         let n4_3 = false;
 
+        let n5 = false;
+
+        let n6 = false;
+
         // content1
         if(400 < offsety && n1_1 == false){
             n1_1 = true;
@@ -122,11 +126,29 @@ window.addEventListener('load', ()=>{
         }
         if(4600 < offsety && n4_3 == false){
             n4_3 = true;
-            document.querySelector('.news-list').classList.add('act');
+            document.querySelector('.g_list').classList.add('act');
         }
         else if(4600 < offsety && n4_3 == true){
             n4_3 = false;
-            document.querySelector('.news-list').classList.remove('act');
+            document.querySelector('.g_list').classList.remove('act');
+        }
+        // content5
+        if(4900 < offsety && n5 == false){
+            n5 = true;
+            document.querySelector('#news').classList.add('act');
+        }
+        else if(4900 < offsety && n5 == true){
+            n5 = false;
+            document.querySelector('#news').classList.remove('act');
+        }
+        // content6
+        if(5700 < offsety && n6 == false){
+            n6 = true;
+            document.querySelector('#map').classList.add('act');
+        }
+        else if(5700 < offsety && n6 == true){
+            n6 = false;
+            document.querySelector('#map').classList.remove('act');
         }
     })
 })
